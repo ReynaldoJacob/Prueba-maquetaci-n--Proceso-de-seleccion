@@ -1,0 +1,14 @@
+body {
+  margin: 0;
+  padding: 0; }
+
+.logo-header {
+  background: url(../Logos/PNG/The_KC_Classroom_Logo-02.png);
+  width: 14%;
+  margin-top: -7px; }
+
+.main-header {
+  background-color: #2596be; }
+
+.banner_with_text {
+  width: 100%; }
