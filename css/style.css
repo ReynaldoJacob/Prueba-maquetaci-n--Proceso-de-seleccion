@@ -1,50 +1,43 @@
 body {
+  overflow-x: clip;
   margin: 0;
-  padding: 0; }
-
-.logo-header {
-  background: url(../Logos/PNG/The_KC_Classroom_Logo-02.png);
-  width: 14%;
-  margin-top: -7px; }
+  background-color: #1E2222;
+  z-index: 0;
+  height: auto;
+  width: 100%; }
 
 .main-header {
-  background-color: #2596be; }
+  background-color: #5cc4bc; }
+
+.logo-header {
+  width: 50%; }
 
 .banner_with_text {
   width: 100%;
-  height: 24em; }
+  height: 12em; }
 
 .small_div_banner {
   background-color: #641d4c;
   height: 87px;
-  text-align: end; }
-
-.banner_header {
-  display: flex; }
+  text-align: center; }
 
 .registrer_interest {
-  float: right;
-  margin-right: 10em;
-  height: 89px;
-  width: 25em; }
+  width: 252px; }
+
+.banner_letters {
+  color: white;
+  font-size: 17px; }
 
 @font-face {
   font-family: 'KGSecondChancesSolid';
-  /* Antes de descargar el archivo, le decimos al buscador
-    que intente buscar en local la fuente con nombre
-    Cabin, Cabin Regular o Cabin-Regular */
   src: local("KGSecondChancesSolid"), url(../Fonts/Main_font/KGSecondChancesSolid.woff) format("woff"); }
 
 .KGSecondChancesSolid {
   font-family: "KGSecondChancesSolid"; }
 
-.banner_letters {
-  color: white;
-  font-size: 22px; }
-
 .our_mission {
   background-color: #C8FE2E;
-  margin-top: 100px;
+  margin: 20px auto;
   width: 306px;
   border-radius: 53px;
   padding: 23px;
@@ -52,41 +45,49 @@ body {
   color: #641d4c;
   font-size: 27px; }
 
-.obj {
-  margin-left: 200px; }
-
 .objectives {
   display: flex;
   color: #641d4c;
-  width: 39em; }
+  width: 35em; }
 
 .align {
   margin-top: 30px;
-  font-size: 20px; }
-
-.what_KC {
-  background-size: cover;
-  height: 500px;
-  background-color: #40F1E5; }
-
-.Asset-02 {
-  float: right;
-  height: 92%;
-  width: 34%;
-  margin-top: -22em; }
+  font-size: 17px; }
 
 .KG_classroom {
   background-color: #641d4c;
-  margin-top: 100px;
-  width: 542px;
   border-radius: 53px;
-  padding: 23px;
-  padding-left: 74px;
   color: white;
   font-size: 27px;
+  margin: 20px auto;
   position: relative;
-  top: 40px;
-  left: 7em; }
+  text-align: center;
+  top: 25px;
+  padding: 23px;
+  width: 542px; }
+
+.what_KC {
+  background-color: #40F1E5;
+  height: 500px;
+  margin-bottom: -25px; }
+
+.info_kg {
+  width: 60%;
+  color: white;
+  font-size: 19px;
+  margin-top: 46px;
+  margin-left: 1em; }
+
+.Asset-02 {
+  float: right;
+  height: 39%;
+  width: 33%;
+  margin-top: -22em; }
+
+.section_3 {
+  height: 92em;
+  background-color: #E611B5;
+  margin-bottom: 0; }
 
 .flexible_curriculum {
   background-color: orange;
@@ -98,40 +99,263 @@ body {
   font-size: 27px;
   position: relative;
   top: 25px;
-  left: 7em; }
-
-.info_kg {
-  width: 963px;
-  color: white;
-  font-size: 25px;
-  margin-top: 79px;
-  margin-left: 8em; }
-
-.section_3 {
-  height: 900px;
-  background-color: #E611B5; }
+  margin: 20px auto; }
 
 .flex-container {
-  /* We first create a flex layout context */
   display: flex;
-  /* Then we define the flow direction 
+  flex-flow: row wrap;
+  justify-content: space-around;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center; }
+
+.flex-item {
+  color: white;
+  width: 60%; }
+
+.container-all {
+  max-width: 100%;
+  margin: auto;
+  height: 100%;
+  background-color: #f49c24;
+  margin-bottom: -25px; }
+
+.container-box {
+  display: flex;
+  flex-wrap: wrap; }
+
+.box {
+  width: 250px;
+  height: 244px;
+  margin: 30px;
+  margin-left: 33%; }
+
+.img-box {
+  width: 250px; }
+
+.section_5 {
+  background-color: skyblue;
+  height: 500px;
+  margin-bottom: 0; }
+
+.img_section_5 {
+  width: 500px;
+  margin: 0 auto;
+  display: block;
+  margin-top: 83px; }
+
+.capa-exterior {
+  background-color: #641d4c;
+  min-height: 190px;
+  position: relative; }
+
+.capa-interior {
+  left: 0;
+  margin: 0;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #fff; }
+
+.registrer_interest_footer {
+  width: 250px;
+  margin-top: 20px; }
+
+@media screen and (min-width: 480px) {
+  body {
+    background-color: yellow; } }
+
+@media screen and (min-width: 767px) {
+  body {
+    background-color: yellow; } }
+
+@media screen and (min-width: 950px) {
+  body {
+    margin: 0;
+    padding: 0; }
+  .contenedor {
+    width: 100%; }
+  .logo-header {
+    background: url(../Logos/PNG/The_KC_Classroom_Logo-02.png);
+    width: 14%;
+    margin-top: -7px; }
+  .main-header {
+    background-color: #5cc4bc; }
+  .banner_with_text {
+    width: 100%;
+    height: 35em; }
+  .small_div_banner {
+    background-color: #641d4c;
+    height: 87px;
+    text-align: end; }
+  .banner_header {
+    display: flex; }
+  .registrer_interest {
+    float: right;
+    margin-right: 10em;
+    height: 89px;
+    width: 25em; }
+  @font-face {
+    font-family: 'KGSecondChancesSolid';
+    /* Antes de descargar el archivo, le decimos al buscador
+    que intente buscar en local la fuente con nombre
+    Cabin, Cabin Regular o Cabin-Regular */
+    src: local("KGSecondChancesSolid"), url(../Fonts/Main_font/KGSecondChancesSolid.woff) format("woff"); }
+  .KGSecondChancesSolid {
+    font-family: "KGSecondChancesSolid"; }
+  .banner_letters {
+    color: white;
+    font-size: 22px;
+    position: relative;
+    top: 30px; }
+  .our_mission {
+    background-color: #C8FE2E;
+    margin-top: 100px;
+    width: 306px;
+    border-radius: 53px;
+    padding: 23px;
+    padding-left: 74px;
+    color: #641d4c;
+    font-size: 27px;
+    margin-left: 10px; }
+  .obj {
+    margin-left: 200px; }
+  .objectives {
+    display: flex;
+    color: #641d4c;
+    width: 39em; }
+  .align {
+    margin-top: 30px;
+    font-size: 20px; }
+  .what_KC {
+    background-size: cover;
+    height: 500px;
+    background-color: #40F1E5;
+    margin-bottom: -1%; }
+  .Asset-02 {
+    float: right;
+    height: 92%;
+    width: 34%;
+    margin-top: -22em; }
+  .KG_classroom {
+    background-color: #641d4c;
+    width: 542px;
+    border-radius: 53px;
+    padding: 23px;
+    color: white;
+    font-size: 27px;
+    position: relative;
+    top: 40px;
+    left: 7em;
+    margin-left: 10px;
+    text-align: center; }
+  .flexible_curriculum {
+    background-color: orange;
+    width: 463px;
+    border-radius: 53px;
+    padding: 23px;
+    padding-left: 74px;
+    color: #641d4c;
+    font-size: 27px;
+    position: relative;
+    top: 25px;
+    left: 7em;
+    margin-left: 10px; }
+  .info_kg {
+    width: 963px;
+    color: white;
+    font-size: 25px;
+    margin-top: 79px;
+    margin-left: 8em; }
+  .section_3 {
+    height: 900px;
+    background-color: #E611B5; }
+  .flex-container {
+    /* We first create a flex layout context */
+    display: flex;
+    /* Then we define the flow direction 
        and if we allow the items to wrap 
      * Remember this is the same as:
      * flex-direction: row;
      * flex-wrap: wrap;
      */
-  flex-flow: row wrap;
-  /* Then we define how is distributed the remaining space */
-  justify-content: space-around;
-  padding: 0;
-  margin: 0;
-  list-style: none; }
-
-.flex-item {
-  padding: 5px;
-  width: 472px;
-  height: 150px;
-  margin-top: 10px;
-  color: white;
-  font-size: 22px;
-  text-align: center; }
+    flex-flow: row wrap;
+    /* Then we define how is distributed the remaining space */
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+    list-style: none; }
+  .flex-item {
+    padding: 5px;
+    width: 472px;
+    height: 150px;
+    margin-top: 10px;
+    color: white;
+    font-size: 22px;
+    text-align: center; }
+  .section_4 {
+    height: 900px;
+    background-color: red; }
+  .section_5 {
+    height: 1000px;
+    background-color: skyblue;
+    margin-top: -25px; }
+  .footer {
+    height: 200px;
+    background-color: #641d4c; }
+  .img_section_5 {
+    margin: 0 auto;
+    display: block;
+    position: relative;
+    top: 95px;
+    width: 1500px; }
+  .capa-padre {
+    margin: 0 auto;
+    display: block;
+    position: relative;
+    top: 150px; }
+  .capa-hijo {
+    display: table-cell;
+    vertical-align: middle; }
+  .footer_letters {
+    color: white;
+    font-size: 38px; }
+  .registrer_interest_footer {
+    height: 185px;
+    width: 34em; }
+  .capa-exterior {
+    background-color: #641d4c;
+    min-height: 190px;
+    position: relative; }
+  .capa-interior {
+    left: 0;
+    margin: 0;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff; }
+  .container-all {
+    max-width: 100%;
+    margin: auto;
+    height: 75em;
+    background-color: #f49c24;
+    margin-bottom: 0; }
+  .container-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-right: 3%; }
+  .box {
+    width: 250px;
+    height: 244px;
+    margin: 180px;
+    margin-top: 102px; }
+  .mission {
+    height: 46em; }
+  .img-box {
+    width: 350px; } }
