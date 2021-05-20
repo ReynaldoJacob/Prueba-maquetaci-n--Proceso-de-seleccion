@@ -166,11 +166,11 @@ body {
 
 @media screen and (min-width: 480px) {
   body {
-    background-color: yellow; } }
+    background-color: transparent; } }
 
 @media screen and (min-width: 767px) {
   body {
-    background-color: yellow; } }
+    background-color: transparent; } }
 
 @media screen and (min-width: 950px) {
   body {
@@ -200,9 +200,6 @@ body {
     width: 25em; }
   @font-face {
     font-family: 'KGSecondChancesSolid';
-    /* Antes de descargar el archivo, le decimos al buscador
-    que intente buscar en local la fuente con nombre
-    Cabin, Cabin Regular o Cabin-Regular */
     src: local("KGSecondChancesSolid"), url(../Fonts/Main_font/KGSecondChancesSolid.woff) format("woff"); }
   .KGSecondChancesSolid {
     font-family: "KGSecondChancesSolid"; }
@@ -274,16 +271,8 @@ body {
     height: 900px;
     background-color: #E611B5; }
   .flex-container {
-    /* We first create a flex layout context */
     display: flex;
-    /* Then we define the flow direction 
-       and if we allow the items to wrap 
-     * Remember this is the same as:
-     * flex-direction: row;
-     * flex-wrap: wrap;
-     */
     flex-flow: row wrap;
-    /* Then we define how is distributed the remaining space */
     justify-content: space-around;
     padding: 0;
     margin: 0;
